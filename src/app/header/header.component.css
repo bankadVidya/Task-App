@@ -1,0 +1,35 @@
+
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top */
+}
+.leftMenu{
+    margin-left:10px;
+}
+.rightMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right:20px;
+}
+.rightMenu h5{
+    margin-right: 15px;
+    cursor: pointer;
+}
+.leftMenu h3{
+    cursor: pointer;
+}
+
+.rightMenu h5:hover{
+    color:#3198D7;
+    transition:all 0.8s ease;
+}

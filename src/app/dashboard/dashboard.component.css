@@ -1,0 +1,129 @@
+.dashboard-head{
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+    margin-top:0px;
+    /* position: absolute */
+    align-items: center;
+}
+.dashboard{
+    background-color: #DCDCDC;
+    height: 520px;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 0px;
+}
+h2 {
+    margin-left:50px;
+}
+button{
+    margin-right:50px;
+    height: 50px;
+    width:130px;
+    margin-top:20px;
+    background-color:#3198D7;
+    border:none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size:15px;
+}
+
+.tasks-boards {
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    height: 420px;
+    overflow-y: scroll;
+}
+
+.task-card {
+    background-color: white;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 220px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:-20px;
+}
+.btns{
+    margin-right:20px;
+    display: flex;
+    gap:10px;
+}
+.del, .edit{
+    margin-left:10px;
+    cursor: pointer;
+}
+.edit-div , .del-div{
+    position: relative;
+    display: inline-block;
+}
+
+.edit-txt , .del-txt{
+    visibility: hidden;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+    position: absolute;
+    top: -200%; /* Adjust as necessary */
+    left: 10%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size:15px;
+}
+.edit-div:hover .edit-txt{
+    visibility: visible;
+    opacity: 1;
+}
+.del-div:hover .del-txt{
+    visibility: visible;
+    opacity: 1;   
+}
+.loader{
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+    border:16px solid rgb(165, 165, 169);
+    border-top:16px solid rgb(56, 56, 236);
+    animation: spin 2s linear infinite;
+    margin-top: 220px;
+    margin-left:550px;
+    position: absolute;
+}
+
+@keyframes spin {
+0% {transform:rotate(0deg);}
+100% {transform: rotate(360deg);}
+    
+}
+.loaderDiv{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(46, 45, 45, 0.5);
+    z-index: 9999;
+}
+.searchbar{
+    width: 400px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: black;
+    border:none;
+    border-radius: 5px;
+    color: rgb(241, 236, 236);
+    padding-left: 10px;
+}

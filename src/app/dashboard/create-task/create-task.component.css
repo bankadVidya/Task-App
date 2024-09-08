@@ -1,0 +1,158 @@
+.popup{
+    height: 490px;
+    width: 510px;
+    background-color:white;
+    position: fixed;
+    top: 65px;
+    left: 350px;
+    padding: 10px;
+}
+#overlay {
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(46, 45, 45, 0.5);
+    z-index: 9;
+}
+.form{
+    margin-left:10px;
+   
+}
+.input-box{
+    margin-bottom:5px;
+}
+h3{
+    
+    margin:4px; 
+    margin-bottom:15px; 
+} 
+.title{
+    width: 95%;
+    height: 30px;
+    /* margin-bottom:10px; */
+} 
+.redTitle{
+    width: 95%;
+    height: 30px;
+    border:1.5px solid red;
+}
+.des{
+    width: 95%;
+    height: 150px;
+    /* font-size: 14px;  */
+    font-family: Arial, sans-serif; 
+}
+.reddes{
+    width: 95%;
+    height: 150px;
+    border:1.5px solid red;
+}
+.redass{
+    border:1.5px solid red;
+}
+.column{
+  
+    width: 95%;
+    margin-top:10px;
+    /* margin-left:10px; */
+    margin-right:50px;
+    display: flex;
+    justify-content: space-between;
+}
+input {
+    height: 30px;
+    width:200px;
+    border-radius: 2px;
+    border:1px solid gray;
+}
+#createdAt{
+    height: 30px;
+    width:200px;
+    border-radius: 2px;
+    border:1px solid gray;}
+select{
+    /* margin-top:10px; */
+    height: 30px;
+    width:200px;
+    border-radius: 2px;
+    border:1px solid gray;
+}
+.column2{
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px;
+    /* margin-left:10px; */
+    /* margin-right:50px; */
+}
+.Status{
+    margin-right: 25px;
+}
+.taskbtn{
+    margin-top: 20px;
+    margin-left:20px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: #3198D7;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+}
+.disabledBtn{
+    margin-top: 20px;
+    margin-left:20px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: #3198D7;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+}
+.formHeader{
+    display: flex;
+    justify-content: space-between;
+}
+#cross{
+    height: 25px;
+    cursor: pointer;
+}
+.loader{
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+    border:16px solid rgb(165, 165, 169);
+    border-top:16px solid rgb(56, 56, 236);
+    animation: spin 2s linear infinite;
+    margin-top: 220px;
+    margin-left:550px;
+    position: absolute;
+}
+
+@keyframes spin {
+0% {transform:rotate(0deg);}
+100% {transform: rotate(360deg);}
+    
+}
+.loaderDiv{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(46, 45, 45, 0.5);
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+}
